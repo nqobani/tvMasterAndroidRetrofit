@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeicons"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_popular_movies"
+            android:icon="@drawable/popularmovies"
+            android:title="Popular Movies" />
+        <item
+            android:id="@+id/nav_popular_shows"
+            android:icon="@drawable/hometv"
+            android:title="Popular TV Shows" />
+        <item
+            android:id="@+id/nav_top_rated_movies"
+            android:icon="@drawable/toprated"
+            android:title="Top rated movies" />
+    </group>
+
+    <item android:title="Link out">
+        <menu>
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/youtube"
+                android:title="Go to YouTube" />
+            <item
+                android:id="@+id/nav_themoviedb"
+                android:icon="@drawable/themoviedb"
+                android:title="Go to themoviedb"/>
+        </menu>
+    </item>
+
+</menu>

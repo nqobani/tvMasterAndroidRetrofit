@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:paddingBottom="0.3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="0.3dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.tvmasterretrofit.Shows"
+    tools:showIn="@layout/app_bar_shows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/searchContainer">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:minHeight="45sp"
+            android:id="@+id/txtSearch"
+            android:hint="Search"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:typeface="monospace"
+            android:inputType="textAutoCorrect"
+            android:layout_weight="10"/>
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="45sp"
+            android:src="@drawable/searchiconss"
+            android:layout_below="@id/txtSearch"
+            android:id="@+id/imgSearch"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/searchContainer"
+        android:id="@+id/recyclerviewMovies"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:id="@+id/lblError"
+        android:textAlignment="center"
+        android:textColor="#F50"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

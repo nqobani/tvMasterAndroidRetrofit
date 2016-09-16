@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:paddingTop="2sp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.tvmasterretrofit.Videos"
+    tools:showIn="@layout/app_bar_videos">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        card_view:cardBackgroundColor="@color/cardview_light_background"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:paddingTop="5sp">
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:minHeight="250sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mVideoView_trailer"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:id="@+id/lblError"
+                android:textAlignment="center"
+                android:textColor="#F50"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Title"
+                android:textAlignment="center"
+                android:layout_below="@id/mVideoView_trailer"
+                android:layout_marginTop="15dp"
+                android:id="@+id/lblTitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="release date"
+                android:layout_below="@id/lblTitle"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/lblReleaseDate"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote Count: 00"
+                android:layout_below="@id/lblTitle"
+                android:layout_toRightOf="@id/lblReleaseDate"
+                android:textSize="15sp"
+                android:id="@+id/lblVoteCount"
+                android:layout_alignParentRight="true"
+                android:textAlignment="textEnd"
+                android:gravity="end"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:textAlignment="center"
+                android:layout_below="@id/lblReleaseDate"
+                android:id="@+id/lblOverView"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/unnamed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.tvmasterretrofit.Home"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:src="@drawable/tvlogo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9">
+            <ImageView
+                android:id="@+id/imgPopularMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/popularmoviesicon"
+                android:layout_weight="3" />
+            <ImageView
+                android:id="@+id/imgTopRated"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/topratedmoviesicon"
+                android:layout_weight="3" />
+            <ImageView
+                android:id="@+id/imgPopularShows"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/popularshowsicon"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9">
+            <ImageView
+                android:id="@+id/imgGotoYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/gotoyoutubeicon"
+                android:layout_weight="3" />
+            <ImageView
+                android:id="@+id/imgGotoThemovies"
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/gotothemoviedb"
+                android:layout_weight="6" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
